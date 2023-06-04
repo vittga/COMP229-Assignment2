@@ -1,0 +1,82 @@
+<!-- File name: projects.ejs
+     Name: Vittoria Garcia Cardias
+     Student ID: 300970112
+     Date: June 02, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="/@fortawesome/fortawesome-free/css/all.min.css" />
+  <link rel='stylesheet' href='/Content/app.css' />
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <% include partials/navbar.ejs %>
+
+    <!-- Main Content -->
+
+  <h1>Here you can find a few projects I have worked on</h1>
+
+  <div class="main-content">
+
+  <h2>Bug Smasher</h2>
+
+  <p class="info">Created using Javascript, HTML and CSS</p>
+
+
+  <div class="center_div">
+
+  <p>This project involved creating a bug smasher game. There were two buttons implemented, the first one reset the speed of the bug (as the speed was incremented every time you clicked on the bug. And the second button resetted the score. A score display was also implemented based on the amount of times the players hit the bug.</p>
+
+  <img src="images/project1.png" alt="Project" height="400" weight="400" class="project" >
+
+</div>
+
+  <h2>Image Gallery with Favorites saving button</h2>
+
+  <p class="info">Created using Javascript, HTML and CSS</p>
+
+  <div class="center_div">
+
+  <p>This project involved creating an image gallery/slider where pictures rotate. A button was implemented to start or stop pictures and another button was created to save your favorite pictures in a galery.</p>
+
+  <img src="images/project2.png" alt="Project" height="400" weight="400" class="project" >
+
+</div>
+
+  <h2>C# Banking App</h2>
+
+  <p class="info">Created using C#</p>
+
+  <div class="center_div">
+
+  <p>This project involved creating a chequing/savings bank account application that calculates the balance of the account after deposits and withdrawals including also a transaction fee depending on the type of account.</p>
+
+  <img src="images/project3.2.png" alt="Project" height="400" weight="400" class="project" >
+  <img src="images/project3.1.png" alt="Project" height="400" weight="400" class="project" >
+  <img src="images/project3.png" alt="Project" height="400" weight="400" class="project" >
+
+</div>
+  </div>
+</div>
+
+
+  <!--Bottom Nav / Footer -->
+
+  <% include partials/footer.ejs %>
+
+  <!-- Script -->
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- File name: index.ejs
+     Name: Vittoria Garcia Cardias
+     Student ID: 300970112
+     Date: June 02, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="/@fortawesome/fortawesome-free/css/all.min.css" />
+  <link rel='stylesheet' href='/Content/app.css' />
+</head>
+<body>
+
+       <!-- Navbar -->
+
+       <% include partials/navbar.ejs %>
+
+    <!-- Main Content -->
+
+  <h1 class="title-index">Welcome to My Website!</h1>
+
+  <div class="center_div_index">
+
+  <p>I'm thrilled to have you here! Whether you are looking to learn more about me or you are someone interested in my services, you've come to the right place. 
+    Feel free to explore the pages on my website through the navigation bar at the top and learn more about my background, projects, and services.</p>
+
+    <p>If you are looking to learn more about me, <a id="aboutme" href="/about" style="color: rgb(231, 153, 206)">click here!</a></p>
+
+    <p>If you have any questions for me or would just like to chat please click on the Contact tab and fill your information out so we can connect!</p>
+
+  </div>
+
+  <!--Bottom Nav / Footer -->
+
+  <% include partials/footer.ejs %>
+
+  <!-- Script -->
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Scripts/app.js"></script>
+  <script> document.getElementById("aboutme").addEventListener("click", function() {
+    window.location.href = "/about";
+  });</script>
+</body>
+</html>

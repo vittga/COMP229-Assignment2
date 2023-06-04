@@ -1,0 +1,84 @@
+<!-- File name: contact.ejs
+     Name: Vittoria Garcia Cardias
+     Student ID: 300970112
+     Date: June 02, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="/@fortawesome/fortawesome-free/css/all.min.css" />
+  <link rel='stylesheet' href='/Content/app.css' />
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <% include partials/navbar.ejs %>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+  <h1>Contact me below</h1>
+
+  <div class="center_div">
+  <p>If you have any questions please do not hesitate to reach out to me by inserting your information on the box below.</p>
+
+    <!-- Contact Form - code from bootstrap -->
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">First and Last Name</span>
+    <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Email</span>
+    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Phone Number</span>
+    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Subject</span>
+    <input type="text" class="form-control" placeholder="Add your subject here" aria-label="Subject" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-text">Message</span>
+    <textarea class="form-control" aria-label="Message"></textarea>
+  </div>
+
+  <br>
+
+  <div class="button">
+      <button id="button" class="btn btn-primary btn-lg" href="/views/index.ejs">Send</button>
+  </div>
+
+</div>
+</div>
+
+
+  <!--Bottom Nav / Footer -->
+
+  <% include partials/footer.ejs %>
+
+  <!-- Script -->
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Scripts/app.js"></script>
+  <script> document.getElementById("button").addEventListener("click", function() {
+    window.location.href = "/home";
+  });</script>
+
+</body>
+</html>

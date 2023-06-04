@@ -1,0 +1,110 @@
+/*   File name: index.ejs
+     Name: Vittoria Garcia Cardias
+     Student ID: 300970112
+     Date: June 02, 2023
+*/
+
+.nav-item {
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    color: #d7a6db;
+    padding-top: 10px;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: #d7a6db;
+}
+
+body {
+    background-color: #f1f0f1;
+    padding-bottom: 50px;
+  }
+  
+  p {
+    text-align: center;
+    color: #5d3a61;
+  }
+
+  .picture {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .csharp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    background-color: #f0b5ee;
+    color: #f1f0f1;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color:#c698d1;
+    transition: 0.7s;
+}
+
+.button {
+    text-align: center;
+}
+
+.center_div {
+    border: none;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+a:link {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.title-index {
+    padding-top: 30px;
+    font-size: 60px;
+}
+
+.center_div_index {
+    border: none;
+    margin: auto;
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.main-content {
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.container-fluid {
+    text-align: center;
+    margin-top: auto;
+    align-items:center;
+    display:flex;
+    vertical-align: middle;
+}
+
+.project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info {
+    padding-top: 10px;
+}

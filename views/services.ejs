@@ -1,0 +1,64 @@
+<!-- File name: services.ejs
+     Name: Vittoria Garcia Cardias
+     Student ID: 300970112
+     Date: June 02, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="/@fortawesome/fortawesome-free/css/all.min.css" />
+  <link rel='stylesheet' href='/Content/app.css' />
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <% include partials/navbar.ejs %>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+  <h1>Services Provided</h1>
+
+  <div class="center_div">
+
+    <h2>Web development and design</h2>
+
+    <!-- all images are from https://www.pngwing.com -->
+
+    <img src="images/webdev.png" alt="Code Symbol" height="150" weight="150" class="picture">
+
+  <p class="info">I specialize in building websites from scratch, design to represent your brand and target your audience. Using industry best practices and the most up to date technologies, I create websites that are responsive, fast and optimized for search engines.</p>
+
+  <h2>Custom C# Applications</h2>
+
+  <img src="images/csharp.png" alt="C sharp symbol" height="180" weight="180" class="csharp">
+
+<p class="info">I specialize in developing applications in C# that are tailored to your specific requirements. from web applications, to mobile and desktop applications, I can create high-performing and scalable solutions. I also have experience working with .NET framework.</p>
+
+<h2>Database Design and Development</h2>
+
+<img src="images/sql.png" alt="SQL Symbol!" height="150" weight="150" class="picture">
+
+<p class="info">I specialize in designing, developing and administering databases taylored to your specific needs. I create efficient databases that help you efficiently organize your data and ensure data integrity in your database.</p>
+
+
+
+  <!--Bottom Nav / Footer -->
+
+  <% include partials/footer.ejs %>
+
+  <!-- Script -->
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Scripts/app.js"></script>
+</body>
+</html>

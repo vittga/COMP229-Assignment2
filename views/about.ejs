@@ -1,0 +1,61 @@
+<!-- File name: about.ejs
+     Name: Vittoria Garcia Cardias
+     Student ID: 300970112
+     Date: June 02, 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel='stylesheet' href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href="/@fortawesome/fortawesome-free/css/all.min.css" />
+  <link rel='stylesheet' href='/Content/app.css' />
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <% include partials/navbar.ejs %>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+  <h1>A bit more about me</h1>
+
+  <img src="images/vittoria.jpg" alt="This is me!" height="200" weight="200" class="picture">
+
+  <div class="center_div">
+  <p>Hello there! I'm Vittoria Garcia, a passionate and dedicated professional in the field of technology. Having a keen eye for detail, 
+    I strive to create solutions to address complex problems. I have a deep understanding of various programming languages and 
+    frameworks, and I'm always eager to learn and explore new technologies.</p>
+  <p>I am currently working in the financial industry as a Publishing Analyst and on my day to day work I get to learn a lot 
+    about web development as I help publish content for a high traffic website.</p>
+  <p>My interests include reading as books have the power tocexpand our knowledge. I'm an avid reader, and I enjoy diving into 
+    both fiction and non-fiction genres. I love the fact that is helps me gain new perspectives and ideas. 
+    I also love travelling, I believe exploring new cultures and experiencing different ways of life helps us broaden our horizon. </p>
+  <p>For a detailed overview of my skills, experiences, and education, please find my resume here.</p>
+</div>
+  <div class="button">
+    <a href="Assets\documents\Resume_Vittoria_Cardias.pdf" class="resume" download>
+      <button type="button" class="btn btn-primary btn-lg" href="Assets\documents\Resume_Vittoria_Cardias.pdf" download>Resume</button>
+      </a>
+  </div>
+</div>
+
+
+  <!--Bottom Nav / Footer -->
+
+  <% include partials/footer.ejs %>
+
+  <!-- Script -->
+
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Scripts/app.js"></script>
+</body>
+</html>
