@@ -18,7 +18,7 @@
 <body>
     <main class="container">
         <div class="row">
-            <div class="col-md-offset-3 col-md-3">
+            <div class="col-md-offset-3 col-md-4">
                 <h1><%= title %></h1>
                 <br>
                 <table class="table table-bordered table-striped table-hover">
@@ -30,13 +30,16 @@
                     </tr>
 
                     <!-- Repeatable Template Row -->
-                    <% for(let count = 0; count < NameList.length; count++) { %>
+                  <% for(let count = 0; count < NameList.length; count++) { %>
                       <tr>
                           <td class="text-center"><%= NameList[count].name %></td>
                           <td class="text-center"><%= NameList[count].number %></td>
                           <td class="text-center"><%= NameList[count].email %></td>
                       </tr>
                   <% } %>
+
+                   
+
                 </table>
             </div>
         </div>
@@ -47,8 +50,8 @@
   <script src="/jquery/dist/jquery.min.js"></script>
   <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/Scripts/app.js"></script>
-  <script> document.getElementById("aboutme").addEventListener("click", function() {
+  <!-- <script> document.getElementById("aboutme").addEventListener("click", function() {
     window.location.href = "/about";
-  });</script>
+  });</script> -->
 </body>
 </html>

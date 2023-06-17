@@ -65,6 +65,16 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/contact" style="color: #ffffff;">Contact</a>
               </li>
+
+              <% if (title == "Contact List") { %>
+                <li class="nav-item active">
+              <%  } else   { %>
+                <li class="nav-item">
+              <%  } %>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/name-list" style="color: #ffffff;">Contact List</a>
+              </li>
               
               </li>
             </ul>

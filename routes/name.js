@@ -9,9 +9,13 @@ let Name = require('../models/name');
 router.get('/', async (req, res, next) =>{
     try {
         let nameList = await Name.find();
-        //console.log(nameList)
+        console.log('namelist = ', nameList);
+       // nameList = NameList;
 
-        res.render('name', {title: 'Name List', NameList: nameList})
+        //res.render('name', {title: 'Name List', NameList: nameList})
+       
+        res.render('name', {title: 'Name List', NameList: nameList});
+       
     } catch (err) {
         console.error(err);
     }
