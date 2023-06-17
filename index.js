@@ -31,4 +31,9 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Us'});
 });
 
+/* GET Name page. */
+router.get('/name-list', function(req, res, next) {
+  res.render('name', { title: 'Name'});
+});
+
 module.exports = router;
