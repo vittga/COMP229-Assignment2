@@ -1,7 +1,7 @@
-<!-- File name: index.ejs
+<!-- File name: list.ejs
      Name: Vittoria Garcia Cardias
      Student ID: 300970112
-     Date: June 02, 2023
+     Date: June 17, 2023
 -->
 
 <!DOCTYPE html>
@@ -23,29 +23,26 @@
          
     <main class="container">
         <div class="row">
-            <div class="col-md-10 mx-auto">
-                <h1 class="mb-3"><%= title %></h1>
+            <div class="offset-md-1 col-md-5">
+                <h1><%= title %></h1>
                 
-          
+                
                 <table class="table table-bordered table-striped table-hover">
                     <!-- Header Row -->
                     <tr>
                         <th class="text-center col-2">Name</th>
                         <th class="text-center col-2">Phone Number</th>
                         <th class="text-center col-8">Email</th>
-                  <% if (typeof displayName == 'string' && displayName) { %>
                         <th class="text-center col-2"></th>
                         <th class="text-center col-2"></th>
-                  <% } %>
                     </tr>
+
                     <!-- Repeatable Template Row -->
                   <% for(let count = 0; count < NameList.length; count++) { %>
                       <tr lass="d=flex">
                           <td class="text-center"><%= NameList[count].name %></td>
                           <td class="text-center"><%= NameList[count].number %></td>
                           <td class="text-center"><%= NameList[count].email %></td>
-                        
-                        <% if (typeof displayName == 'string' && displayName) { %>
                           <td class="text-center col-1">
                             <a href="/name-list/edit/<%= NameList[count]._id %>" class="btn btn-primary btn-sm">
                             <i class="fas fa-pencil-alt"></i>Edit</a>
@@ -54,21 +51,20 @@
                             <a href="/name-list/delete/<%= NameList[count]._id %>" class="btn btn-danger btn-sm">
                             <i class="fas fa-trash-alt"></i>Delete</a>
                           </td>
-                        <% } %>
-                          </tr>
+                      </tr>
                   <% } %>
-                      </table>
+                </table>
 
                 <!-- <a href="/name-list/add" class="btn btn-primary" role="button">
                   <i class="fas fa-plus-circle">Add a Name</i>
-                  </a> -->
-                  <% if (typeof displayName == 'string' && displayName) { %>
-                    <a href="/name-list/add" class="btn btn-primary" role="button">
-                      <i class="fas fa-plus-circle">Add a Name</i>
-                    </a>
-                  <% } %>
-
-
+                </a> -->
+                
+                <% if (typeof displayName == 'string' && displayName) { %>
+                  <a href="/name-list/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle">Add a Name</i>
+                  </a>
+                <% } %>
+           
             </div>
         </div>
     </main>

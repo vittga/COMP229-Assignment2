@@ -4,6 +4,10 @@
      Date: June 02, 2023
 */
 
+.form-group {
+    margin-bottom: 10px;
+}
+
 .nav-item {
     color: rgb(255, 255, 255);
 }
@@ -44,9 +48,10 @@ body {
   }
 
   .btn {
-    background-color: #f0b5ee;
+    background-color: #f0b5ee !important;
     color: #f1f0f1;
     border: none;
+    text-align: center;
   }
 
   .btn:hover {
@@ -61,14 +66,13 @@ body {
 .center_div {
     border: none;
     margin: auto;
-    width: 50%;
+    width: 40%;
     padding-top: 10px;
     padding-bottom: 10px;
     
 }
 
 a:link {
-    color: pink;
     background-color: transparent;
     text-decoration: none;
   }
